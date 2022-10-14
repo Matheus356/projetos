@@ -1,0 +1,131 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versao do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">    
+        <meta http-equiv="X-UA-Coompatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>icones sociais</title>
+        <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+        <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;1,400 & display=swap');
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-seri;
+        }
+       
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 15px;
+            background: #0a0609;
+        }
+        .box{
+            width: 65px;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            padding: 5 px;
+            margin: 0.6rem;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .4s ease;
+            
+        }
+        .box:hover{
+            width: 200px;
+            background: rgb(156, 27, 77);
+            border-radius: 35px;
+            color: aliceblue;
+            box-shadow: 0 0 50px #8f08567c;
+        }
+        .box:nth-child(2):hover{
+            background: #25d366;
+            box-shadow:  0 0 50px #25d3657e;
+        }
+        .box:nth-child(3):hover{
+            background: rgb(49, 90, 224);
+            box-shadow:  0 0 50px #7b94e7;
+        }
+        .box:nth-child(4):hover{
+            background: rgb(112, 164, 231);
+            box-shadow:  0 0 50px #1659a7;
+        }
+        .navbar p{
+            transform: translate(60px);
+        }
+        .box .icon{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all .4s ease;
+        }
+        .Instagram{
+            background-color: rgb(156, 27, 77);
+        }
+        .whatsapp{
+            background-color: rgb(22, 151, 91);
+        }
+        .facebook{
+            background-color: rgb(49, 90, 224);
+        }
+        .twitter{
+            background-color: rgb(112, 164, 231);
+        }  
+        .box:hover .icon{
+            background: #fff;
+            color: #3b3b3b;
+            box-shadow: 0 0 20px rgba(0,0,0,0.26);
+
+
+        }
+    </style>
+    <body>
+          <div class="navbar">
+            
+            <div class="box">
+                <div class="icon Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+                <p>Instagram</p>
+            </div>
+
+            <div class="box">
+                <div class="icon whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+                <p>whatsapp</p>
+            </div>
+
+            <div class="box">
+                <div class="icon facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+                <p>facebook</p>
+            </div>
+
+            <div class="box">
+                <div class="icon twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+                <p>twitter</p>
+            </div>
+          </div>
+    </body>
+</html>
+
