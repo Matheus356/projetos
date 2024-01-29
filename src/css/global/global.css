@@ -1,0 +1,65 @@
+:root {
+    --p1:#3B32FF;
+    --b1:#000000;
+    --b2:#404040;
+    --c1:#B3B3B3;
+    --c2:#EDEDED;
+    --c3:#F7F7F7;
+    --c4:#FAFAFA;
+    --c5:#fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .2s;
+    border: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #171717;
+    background-color: #fff;
+}
+
+body::after {
+    content: url(../../img/marca.svg);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+a {
+    color: inherit;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background-color: var(--c3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--p1);
+    border: 2px solid var(--c3);
+    border-radius: 10px;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
