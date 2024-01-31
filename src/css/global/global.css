@@ -1,5 +1,6 @@
 :root {
     --p1:#3B32FF;
+    --s1: #FF9A28;
     --b1:#000000;
     --b2:#404040;
     --c1:#B3B3B3;
@@ -16,14 +17,13 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: .2s;
     border: none;
 }
 
 body {
-    font-family: "DM Sans", sans-serif;
     color: #171717;
     background-color: #fff;
+    padding: 16px 0;
 }
 
 body::after {
@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     max-width: 1440px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
