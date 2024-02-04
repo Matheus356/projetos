@@ -6,15 +6,21 @@
 }
 .font-1-m {
     font-family: "DM Sans", sans-serif;
-    font-size:  0.9375rem;
+    font-size:  0.94rem;
     line-height: 1.2rem;
     font-weight: 600;
 }
 .font-1-s {
     font-family: "DM Sans", sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.88rem;
     line-height: 1.2rem;
     font-weight: 500;
+}
+.font-1-s-b {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.2rem;
+    font-weight: 400;
 }
 
 .font-2-xl {
@@ -35,10 +41,32 @@
 .font-2-s {
     font-family: "Rubik", sans-serif;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 .font-2-xs {
     font-family: "Rubik", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .font-1-l {
+        font-size: 1rem;
+    } 
+    .font-2-xl {
+        font-size: 2rem;
+    }
+    .font-2-l {
+        font-size: 1.25rem;
+    }
+    .font-2-m {
+        font-size: 1rem;
+    }
+    .font-2-s {
+        font-size: 0.9rem;
+    }
+    .font-2-xs {
+        font-size: .7rem;
+    }
+    
 }

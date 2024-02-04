@@ -1,0 +1,58 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+    gap: 1.25rem;
+}
+
+.banner-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all .2s;
+}
+
+.banner-content h1 {
+    max-width: 15ch;
+}
+
+.banner-content p {
+    max-width: 30ch;
+}
+
+@media (max-width: 900px) {
+    .banner {
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .banner img {
+        min-width: 360px;
+    }
+
+    .banner-content {
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .banner-content h1 {
+        max-width: 28h;
+    }
+
+    .banner-content p {
+        max-width: 40ch;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-content {
+        align-items: initial;
+    }
+    .banner img {
+        min-width: 280px;
+    }
+}
