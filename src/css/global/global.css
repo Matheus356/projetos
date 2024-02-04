@@ -28,7 +28,7 @@ body {
 }
 
 body::after {
-    content: url(../../img/marca.svg);
+    content: url(../../img/bg.svg);
     height: 100%;
     position: absolute;
     top: 0;

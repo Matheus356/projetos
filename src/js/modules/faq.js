@@ -4,8 +4,8 @@ export default function initFaqs() {
     const element = event.currentTarget;
     const controls = element.getAttribute('aria-controls');
     const id = document.getElementById(controls);
-    id.classList.toggle('ativa');
-    const active = id.classList.contains('ativa');
+    id.classList.toggle('active');
+    const active = id.classList.contains('active');
     element.setAttribute('aria-expanded', active);
   }
 
