@@ -1,6 +1,8 @@
 :root {
     --p1:#3B32FF;
     --s1: #FF9A28;
+    /* --s2: linear-gradient(90deg, rgba(255,222,184,1) 0%, rgba(255,204,147,1) 100%); */
+    --s2: #ffcc93;
     --b1:#000000;
     --b2:#404040;
     --c1:#B3B3B3;
@@ -23,7 +25,6 @@
 body {
     color: #171717;
     background-color: #fff;
-    padding: 16px 0;
 }
 
 body::after {
@@ -55,12 +56,4 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--p1);
     border: 2px solid var(--c3);
     border-radius: 10px;
-}
-
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 60px;
 }

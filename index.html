@@ -14,22 +14,27 @@
 </head>
 
 <body>
-    <header class="header-container container" id="home">
+    <header class="header-container container">
         <a href="./" class="header-img">
-            <img src="./src/img/Logo.svg" alt="Logo LastWest">
+            <img src="./src/img/Logo.svg" alt="Logo LastWest" width="175" height="65">
         </a>
         <nav class="header-menu">
-            <ul>
+            <button class='menu-button' aria-expanded='' aria-controls="menu" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu-list">
                 <li><a class="font-1-m" href="#home">Inicio</a></li>
                 <li><a class="font-1-m" href="#services">Serviços</a></li>
                 <li><a class="font-1-m" href="#about">Quem somos</a></li>
                 <li><a class="font-1-m" href="#contact">Contato</a></li>
                 <li><a class="font-2-m btn" href="#">Contrate-nos</a></li>
-
             </ul>
         </nav>
     </header>
-    <section class="banner">
+    
+    <main class="banner" id="home">
         <div class="banner-content">
             <h1 class="banner-title font-2-xl">Destaque sua marca no mundo online </h1>
             <p class="banner-text font-1-l"> Desenvolvimento web orientado para performance e SEO,
@@ -39,11 +44,9 @@
         <div class="banner-img">
             <img src="./src/img/30576710_7706579 1.svg" alt="#">
         </div>
-    </section>
-    </div>
+    </main>
 
-
-    <section class="services" id="services">
+    <article class="services" id="services">
         <h2 class="font-2-xl">O que fazemos</h2>
         <p class="font-1-s">Construímos websites responsivos e centrados na experiência do usuário para elevar o seu negócio online.
             Nossa abordagem se destaca ao garantir que cada site seja visualmente atraente,
@@ -71,10 +74,9 @@
             </li>
         </ul>
         <a href="#" class="font-2-m btn">Solicitar um orçamento</a>
-    </section>
+    </article>
 
-
-    <section class="section-jobs">
+    <article class="section-jobs">
         <h2 class="font-2-xl">Alguns de nossos trabalhos</h2>
         <ul>
             <li class="card-projetos">
@@ -99,9 +101,9 @@
                 </p>
             </li>
         </ul>
-    </section>
+    </article>
 
-    <section class="about">
+    <article class="about" id="about">
         <h2 class="about-title font-2-xl">Conheça a equipe</h2>
         <ul>
             <li class="about-card">
@@ -116,7 +118,7 @@
                 <p class="font-1-s">Desenvolvimento web orientado para performance e SEO, impulsionando o sucesso do seu negócio online.</p>
             </li>
         </ul>
-    </section>
+    </article>
 
     <section class="methods">
         <div class="methods-card">
@@ -139,18 +141,70 @@
         </div>
     </section>
 
-    <section class="section-orçamento">
+    <article class="section-orçamento">
         <h2 class="font-2-l">Solicite seu orçamento</h2>
         <p class="font-1-s">Estamos prontos para transformar sua visão em realidade.
             Solicite seu orçamento agora e dê o primeiro passo para ter seu website.
         </p>
         <a href="#" class="font-2-m btn">solicite seu orçamento</a>
-    </section>
+    </article>
+
+    <article class="perguntas container-1200">
+        <h2 class="font-2-xl">perguntas frequentes<span>.</span></h2>
+
+        <dl>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd class="font-2-s cor-9 ativa" id="pergunta1">Aceitamos cartões com as bandeiras: Visa, Mastercard, ELO, American Express.
+                    Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi. </dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi. </dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi. </dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi. </dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi. </dd>
+            </div>
+            <div>
+                <dt><button class="font-1-m-b" aria-controls="pergunta7" aria-expanded="false">Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
+                <dd class="font-2-s cor-9" id="pergunta7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit impedit
+                    necessitatibus sit provident, possimus animi earum cupiditate excepturi eius eligendi.</dd>
+            </div>
+        </dl>
+    </article>
+    
+    <article class="section-contacts" id="contact">
+        <h2 class="font-2-l">Solicite seu orçamento</h2>
+        <p class="font-1-s">Estamos prontos para transformar sua visão em realidade.
+            Solicite seu orçamento agora e dê o primeiro passo para ter seu website.
+        </p>
+        <a href="#" class="font-2-m btn">solicite seu orçamento</a>
+    </article>
 
     <footer>
         <img src="" alt="">
         <p class="font-1-s">©2024 LastWest. Todos os direitos reservados.</p>
     </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>

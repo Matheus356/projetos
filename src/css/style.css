@@ -1,4 +1,6 @@
 @import url(./global/global.css);
 @import url(./global/header.css);
-@import url(./components/tipografia.css);
+@import url(./global/menu.css);
+@import url(./components/container.css);
 @import url(./components/components.css);
+@import url(./components/tipografia.css);
