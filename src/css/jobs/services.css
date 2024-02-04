@@ -1,0 +1,49 @@
+.services p {
+    max-width: 88ch;
+    text-align: center;
+}
+
+.services ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.services ul li.card {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background-color: var(--c3);
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    .services {
+        padding: 2rem 0;
+        gap: 1.25rem;
+    }    
+    .services ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services ul li.card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .services ul {
+        gap: 1rem;
+    }
+    .services ul li.card {
+        gap: 1rem;
+        padding: 1.25rem .75rem;
+    }
+}
+    .services ul li img {
+        width: 80px;
+    }

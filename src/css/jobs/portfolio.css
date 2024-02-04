@@ -1,0 +1,8 @@
+.jobs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.jobs-list .card-projetos {
+    width: 100%;
+}
