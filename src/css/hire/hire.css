@@ -1,0 +1,15 @@
+.hire .btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.hire .btn-container::before, .hire .btn-container::after {
+    content: url(../../img/reticencias.svg);
+}
+
+@media (max-width: 600px) {
+    .hire .btn-container::before, .hire .btn-container::after {
+        content: '';
+    }
+}

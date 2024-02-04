@@ -28,6 +28,7 @@
         flex-direction: column;
         padding: 2rem 0;
         gap: 1rem;
+        text-align: center;
     }
 
     .banner img {
@@ -50,9 +51,6 @@
 }
 
 @media (max-width: 600px) {
-    .banner-content {
-        align-items: initial;
-    }
     .banner img {
         min-width: 280px;
     }

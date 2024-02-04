@@ -2,7 +2,17 @@
     background-color: var(--c3);
 }
 
-.services, .jobs {
+.section-about, .section-contact {
+    text-align: center;
+    background-color: var(--c4);
+}
+
+.section-hire-us {
+    text-align: center;
+    background-color: var(--c2);
+}
+
+.services, .jobs, .about, .methods, .hire, .faq, .contacts, .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,22 +22,22 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 90px 60px;
+    padding: 5.6rem 3.75rem;
 }
 
 .container:has(> .banner), .container.header-container {
-    padding: 8px 60px !important;
+    padding: 0.5rem 3.75rem !important;
 }
 
 @media (max-width: 900px) {
     .container {
         max-width: 1440px;
         margin: 0 auto;
-        padding: 40px 30px;
+        padding: 2.5rem 1.8rem;
     }
     
     .container:has(> .banner), .container.header-container {
-        padding: 8px 30px !important;
+        padding: 0.5rem 1.8rem !important;
     }
 }
 
@@ -35,10 +45,10 @@
     .container {
         max-width: 1440px;
         margin: 0 auto;
-        padding: 20px 20px;
+        padding: 2rem 1.25rem;
     }
     
     .container:has(> .banner), .container.header-container {
-        padding: 8px 20px !important;
+        padding: 0.5rem 1.25rem !important;
     }
 }

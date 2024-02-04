@@ -1,0 +1,41 @@
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.about-list .about-card {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 2.5rem;
+    background-color: var(--c5);
+    border-radius: 5px;
+}
+
+.about-list .about-card img {
+    min-width: 200px;
+}
+    
+.about-list .about-card p {
+    max-width: 40ch;
+} 
+
+@media (max-width: 900px) {
+    
+    .about-list .about-card {
+        padding: 2.5rem 2rem;
+    }       
+}
+
+@media (max-width: 600px) {    
+    .about-list {
+        grid-template-columns: 1fr;
+    }
+    .about-list .about-card:nth-child(1) {
+        grid-column: auto;
+    }    
+}
