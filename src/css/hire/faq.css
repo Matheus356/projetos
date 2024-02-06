@@ -1,0 +1,79 @@
+.faq {
+    text-align: left;
+}
+
+.faq h2 {
+    margin-bottom: 60px;
+}
+
+.faq dl>div {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--c5);
+}
+
+.faq dl>div+div {
+    margin-top: 1rem;
+}
+
+.faq button {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.faq button::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--p1);
+}
+
+.faq button::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    border-radius: 5px;
+    background: url("../../img/seta.svg");
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.faq button:hover::after,
+.faq button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.js .faq dd {
+    display: none;
+}
+
+.js .faq dd.active {
+    display: block;
+}
+
+.faq dd {
+    margin-top: 1.25rem;
+    max-width: 80ch;
+}
+
+@media (max-width: 800px) {
+    .faq {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .faq h2 {
+        margin-bottom: 40px;
+    }
+}

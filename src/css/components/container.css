@@ -12,10 +12,16 @@
     background-color: var(--c2);
 }
 
-.services, .jobs, .about, .methods, .hire, .faq, .contact, .footer {
+.services, .jobs, .about, .methods, .hire, .contact, .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
